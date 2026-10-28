@@ -1,38 +1,28 @@
-# CI/CD Tools and Practices Final Project Template
+# CI/CD Final Project
 
-This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
-## Usage
+This repository contains the final project for the **Continuous Integration and Continuous Delivery (CI/CD)** course as part of the IBM DevOps and Software Engineering Professional Certificate.
 
-This repository is to be used as a template to create your own repository in your own GitHub account. No need to Fork it as it has been set up as a Template. This will avoid confusion when making Pull Requests in the future.
+## Project Overview
 
-From the GitHub **Code** page, press the green **Use this template** button to create your own repository from this template.
+This project demonstrates a full CI/CD pipeline implementation using:
+- **GitHub Actions** for continuous integration (linting with `flake8` and unit testing with `nosetests` / `pytest`)
+- **Tekton Pipelines & Tasks** for continuous deployment to OpenShift / Kubernetes
+- Automated building of container images using `buildah`
+- Deployment and validation on an OpenShift cluster
 
-Name your repo: `ci-cd-final-project`.
+## Features
 
-## Setup
-
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
-
-```bash
-bash bin/setup.sh
-```
-
-Then you must exit the shell and start a new one for the Python virtual environment to be activated.
-
-```bash
-exit
-```
-
-## Tasks
-
+- RESTful API service implementation
+- Automated linting and style enforcement
+- Comprehensive test suite and code coverage
+- Event-driven CI workflow triggered on pull requests and pushes to `main`
+- Tekton pipeline automation including clone, lint, test, build, and deploy steps
 
 ## License
 
-Licensed under the Apache License. See [LICENSE](/LICENSE)
+Copyright (c) IBM Corporation. All rights reserved.
 
-## Author
-
-Skills Network
-
-## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
+Licensed under the [Apache License, Version 2.0](LICENSE).
